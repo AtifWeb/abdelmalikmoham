@@ -1,0 +1,309 @@
+.HomeHero {
+  position: relative;
+  height: 800px;
+}
+.HomeHero > img:not(.glass-bg) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.HomeHero > div.glass-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(56px);
+}
+.HomeHero > .presentation {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.HomeHero > .presentation > p:first-child {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.HomeHero > .presentation > h1 {
+  width: 45%;
+  font-size: 60px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+.HomeHero > .presentation > h1 + p {
+  font-size: 25px;
+  width: 45%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.HomeHero > .presentation > button {
+  width: 220px;
+  height: 60px;
+  justify-content: center;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #7ac15a;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.Home .BusinessExplore > h1,
+.Home .BusinessExplore > p {
+  text-align: center;
+  color: #25291e;
+}
+.Home .BusinessExplore > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Home .BusinessExplore > h1 {
+  font-size: 50px;
+
+  font-weight: 700;
+}
+.Home .BusinessExplore .business-solutions-column-area,
+.reviews-wrapper {
+  margin-top: 5rem;
+  grid-gap: 4rem;
+}
+.Home .BusinessExplore .business-solutions-column-area > * h1,
+.reviews-wrapper > * h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Home .BusinessExplore .business-solutions-column-area > * h1 + p,
+.reviews-wrapper > * h1 + p {
+  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.Home .BusinessExplore .business-solutions-column-area > * h1 + p + p,
+.ClientReviews .content .information-review-wrapper p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+/* WhyManza */
+.WhyManza {
+  background-color: #f7f7f7;
+  padding: 7rem 0rem;
+}
+.WhyManza-content {
+  grid-gap: 4rem;
+  align-items: center;
+}
+.WhyManza-content .left-area p:first-child,
+.WithManza .presentation > p:first-child {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.WhyManza-content .left-area p:first-child + h1,
+.WithManza .presentation > p:first-child + h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.WhyManza-content .left-area p:first-child + h1 + p,
+.WithManza .presentation > p:first-child + h1 + p {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 30px 0rem;
+  line-height: 24px;
+}
+.WhyManza-content .left-area p:first-child + h1 + p span,
+.WithManza .presentation > p:first-child + h1 + p span {
+  display: block;
+  margin-top: 10px;
+}
+.WhyManza-content .left-area a {
+  color: #7ac15a;
+  font-weight: 700;
+  font-size: 18px;
+}
+.WhyManza-content .left-area a svg {
+  margin-left: 10px;
+}
+
+.WhyManza-content .right-area > * + * {
+  margin-top: 2rem;
+}
+/* WhyManzaStep */
+.WhyManzaStep {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+.WhyManzaStep .image-wrapper {
+  justify-content: center;
+  border-right: 5px solid #7ac15a;
+  padding: 0.5rem 0rem;
+}
+.WhyManzaStep .presentation {
+  padding: 0rem 2rem;
+}
+.WhyManzaStep .presentation h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.WhyManzaStep .presentation p {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+/* WithManza */
+.WithManza {
+  grid-gap: 4rem;
+}
+.WithManza img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* NewUser */
+.NewUser {
+  background-color: #f7f7f7;
+}
+.NewUser .content > p,
+.NewUser .content > h1 {
+  text-align: center;
+}
+.NewUser .content > h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.NewUser .content > p {
+  width: 700px;
+  margin: 0rem auto;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.NewUser .content .users-information {
+  width: 80%;
+  margin: 0rem auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+.NewUser .content .users-information > * p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+.NewUser .content .users-information > * {
+  border-right: 5px solid #7ac15a;
+}
+.NewUser .content .users-information > *:last-child {
+  border: none;
+}
+.NewUser .content .users-information > * strong {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .HomeHero > div.glass-bg,
+  .HomeHero > .presentation > h1,
+  .HomeHero > .presentation > h1 + p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .WhyManza-content,
+  .WithManza {
+    grid-template-columns: 1fr;
+  }
+  .NewUser .content .users-information {
+    width: 100%;
+  }
+  .NewUser .content > p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .NewUser .content .users-information {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  .NewUser .content .users-information > * {
+    border: none;
+  }
+  .NewUser .content .users-information > *:last-child {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Home .BusinessExplore .business-solutions-column-area,
+  .reviews-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .HomeHero > .presentation > h1 {
+    font-size: 40px;
+  }
+  .Home .BusinessExplore > h1,
+  .WhyManza-content .left-area p:first-child + h1,
+  .WithManza .presentation > p:first-child + h1,
+  .NewUser .content > h1,
+  .NewUser .content .users-information > * strong {
+    font-size: 30px;
+  }
+  .HomeHero > .presentation > h1 + p,
+  .Home .BusinessExplore .business-solutions-column-area > * h1,
+  .reviews-wrapper > * h1 {
+    font-size: 20px;
+  }
+  .Home .BusinessExplore .business-solutions-column-area > * h1 + p,
+  .reviews-wrapper > * h1 + p,
+  .Home .BusinessExplore .business-solutions-column-area > * h1 + p + p,
+  .ClientReviews .content .information-review-wrapper p,
+  .WhyManza-content .left-area p:first-child + h1 + p,
+  .WithManza .presentation > p:first-child + h1 + p,
+  .WhyManza-content .left-area a,
+  .NewUser .content > p,
+  .NewUser .content .users-information > * p:first-child,
+  .Footer .content p {
+    font-size: 15px !important;
+  }
+  .WhyManza-content .left-area p:first-child,
+  .WithManza .presentation > p:first-child {
+    font-size: 16px;
+  }
+  .HomeHero > .presentation > button,
+  .join-now-button {
+    font-size: 14px !important;
+    width: 160px !important;
+    height: 50px !important;
+  }
+  .WhyManzaStep {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .WhyManzaStep > * + * {
+    margin-top: 2rem;
+  }
+  .WhyManzaStep > *:first-child {
+    border-right: none;
+    border-left: 5px solid #7ac15a;
+  }
+  .Footer img,
+  .header .logo img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .HomeHero > .presentation {
+    text-align: center;
+  }
+}

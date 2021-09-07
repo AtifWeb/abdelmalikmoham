@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.App {
+  font-family: "Montserrat", sans-serif !important;
+}
+.w-85 {
+  width: 85%;
+  margin: 0rem auto;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #25291e !important;
+}
+a {
+  text-decoration: none;
+}
+nav,
+ul {
+  list-style: none;
+}
+.d-flex,
+.d-flex-align-center,
+.d-flex-justify-center {
+  display: flex;
+}
+.d-flex-align-center {
+  align-items: center;
+}
+.d-flex-justify-center {
+  justify-content: center;
+}
+
+.d-grid,
+.grid-col-2,
+.grid-col-3,
+.grid-col-4 {
+  display: grid;
+}
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.join-now-button {
+  width: 220px;
+  height: 60px;
+  justify-content: center;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #7ac15a;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* header-content */
+.header {
+  height: 112px;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+}
+.header .header-content {
+  justify-content: space-between;
+}
+.header .header-content .burger-icon {
+  display: none;
+}
+.header .header-content .right-area > * + * {
+  margin-left: 2rem;
+}
+.header .header-content .right-area a {
+  color: #25291e;
+  font-size: 17px;
+}
+.header .header-content .right-area .btn {
+  width: 128px;
+  height: 50px;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.header .header-content .right-area .btn-success {
+  background-color: #7ac15a;
+  color: #fff;
+}
+.header .header-content .right-area .btn-success-outline {
+  border-color: #7ac15a;
+  margin-left: 10px !important;
+}
+
+/* padding-section */
+.padding-section {
+  padding: 7rem 0rem;
+}
+
+/* Footer */
+.Footer {
+  background-color: #50534b;
+  height: 206px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Footer .content p {
+  color: #fff !important;
+  font-size: 17px !important;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    position: relative;
+  }
+  .header .header-content .right-area {
+    position: fixed;
+
+    flex-direction: column;
+    top: 0%;
+    left: -100%;
+    width: 50%;
+    align-items: flex-start;
+    background-color: #fff;
+    z-index: 2222;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: 0px 10px 10px rgba(189, 189, 189, 0.5);
+    transition: 0.5s ease all;
+  }
+  .header .header-content .right-area.active {
+    left: 0;
+  }
+  .header .header-content .right-area > * {
+    padding: 1rem 0rem;
+  }
+  .header .header-content .right-area > * + *,
+  .header .header-content .right-area .btn-success-outline {
+    margin-left: 0rem !important;
+  }
+  .header .header-content .burger-icon {
+    display: block !important;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,451 @@
+.Profile {
+  background-color: #f7f7f7;
+}
+.Profile .header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.Profile .header nav a {
+  color: #fff !important;
+}
+.profile-area-header p {
+  margin-right: 10px;
+  color: #fff !important;
+}
+
+.Profilehero {
+  height: 466px;
+  background-image: url(../img/Mask\ Group\ 5.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 50px 200px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Profilehero .glass-wrapper {
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(56px);
+  width: 830px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Profilehero .glass-wrapper img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.Profilehero .glass-wrapper img.left-arrow {
+  left: 20px;
+}
+.Profilehero .glass-wrapper img.right-arrow {
+  right: 20px;
+}
+.Profilehero .glass-wrapper .presentation {
+  text-align: center;
+  color: #fff;
+}
+.Profilehero .glass-wrapper .presentation h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.Profilehero .glass-wrapper .presentation h3 + p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff !important;
+}
+.Profilehero .glass-wrapper .presentation strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* profile information */
+.ProfileInformation {
+  padding-top: 0px !important;
+}
+.ProfileInformation .profile-info-area {
+  margin-left: 2rem;
+  padding-top: 2rem;
+  flex: 1;
+}
+.ProfileInformation .profile-info-area .top-area {
+  align-items: flex-end;
+}
+/* .top-area .image-wrapper {
+  background-color: red;
+} */
+.top-area .image-wrapper > img {
+  transform: translateY(-30px);
+  height: 100%;
+}
+.ProfileInformation .profile-info-area .top-area > *:first-child {
+  font-size: 35px;
+  font-weight: 700;
+}
+.ProfileInformation .profile-info-area .top-area > *:last-child {
+  margin-left: 2rem;
+  font-size: 17px;
+}
+.ProfileInformation .profile-info-area .bottom-area {
+  margin-top: 1rem;
+}
+.ProfileInformation .profile-info-area .bottom-area > * {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.ProfileInformation .profile-info-area .bottom-area > *:first-child {
+  flex: 1;
+  margin-right: 10px;
+}
+.ProfileInformation .profile-info-area .bottom-area > * > p:first-child {
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+.ProfileInformation .profile-info-area .bottom-area > * > ul li {
+  margin-bottom: 15px;
+}
+.ProfileInformation .profile-info-area .bottom-area > * > ul li svg {
+  margin-right: 10px;
+}
+.ProfileInformation
+  .profile-info-area
+  .bottom-area
+  > *
+  > ul
+  + .icons-wrapper
+  > *
+  + * {
+  margin-left: 1rem;
+}
+.ProfileInformation .bottom {
+  grid-gap: 1rem;
+  margin-top: 0rem;
+}
+.ProfileInformation .bottom .google-map-area {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileInformation .bottom iframe {
+  width: 100%;
+  height: 200px;
+  flex: 1;
+}
+.ProfileInformation .chart-area {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileInformation .chart-area .top-area {
+  justify-content: space-between;
+}
+.ProfileInformation .chart-area .top-area .time svg {
+  margin-right: 10px;
+}
+.ProfileInformation .chart-area .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.ProfileInformation .chart-area .days > *:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+.ProfileInformation .chart-area .chart-wrapper {
+  flex: 1;
+}
+.ProfileInformation .chart-area .days > *:last-child {
+  text-align: right;
+}
+.ProfileInformation .chart-area .days > * {
+  text-align: center;
+}
+.ProfileInformation .bottom > * {
+  background: #fff;
+  padding: 1.5rem;
+}
+.ProfileInformation .bottom > * p {
+  margin-bottom: 20px;
+}
+.ProfileInformation .bottom > *.contact-area {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileInformation .bottom > *.contact-area p {
+  font-size: 17px;
+  color: #25291e !important;
+}
+.ProfileInformation .bottom > *.contact-area textarea {
+  width: 100%;
+  border-radius: 5px;
+  flex: 1;
+  margin-bottom: 10px;
+  resize: none;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 1.5rem 1rem;
+  outline: none;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+}
+.ProfileInformation .bottom > *.contact-area button {
+  width: 100%;
+  border: 1px solid #7ac15a;
+  color: #7ac15a;
+  background-color: transparent;
+}
+.ProfileInformation
+  .profile-info-area
+  .bottom-area
+  > *
+  > .images-wrapper
+  > *
+  + * {
+  margin-left: 0.5rem;
+}
+.ProfileInformation .profile-info-area .bottom-area > * > .images-wrapper img {
+  width: 90px !important;
+  /* background-color: red; */
+}
+/* AboutUs */
+.AboutUs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 220px);
+  grid-gap: 2rem;
+  padding-top: 0rem;
+}
+.AboutUs > *:first-child,
+.AboutUs > *:nth-child(2),
+.AboutUs > *:nth-child(3) {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+.AboutUs > *:nth-child(4),
+.AboutUs > *:nth-child(7) {
+  grid-column: span 2;
+  position: relative;
+}
+.AboutUs > *:nth-child(5),
+.AboutUs > *:nth-child(6) {
+  grid-column: span 4;
+}
+.AboutUs > *:first-child p {
+  margin-bottom: 20px;
+  padding-right: 4rem;
+}
+
+.AboutUs > *:nth-child(7)::after {
+  content: "More Photos";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17;
+  font-weight: 600;
+}
+
+.AboutUs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ClientReviews */
+.ClientReviews {
+  padding-top: 0rem;
+}
+.ClientReviews .content {
+  background-color: #fff;
+  padding: 3rem 3rem;
+}
+.ClientReviews .content > h1,
+.AboutUs > *:first-child h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.ClientReviews .content .rating-area > * + * {
+  margin-left: 5rem;
+}
+.ClientReviews .content .rating-area > div > * + * {
+  margin-left: 1rem;
+}
+.ClientReviews .content .rating-area > div > p:first-child,
+.AboutUs > *:first-child p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.ClientReviews .content .rating-area > div > strong {
+  font-size: 17px;
+  font-weight: 700;
+}
+.ClientReviews .content .information-review-wrapper > * {
+  padding-right: 2rem;
+  border-right: 1px solid #2c2c2c;
+}
+.ClientReviews .content .information-review-wrapper > * + * {
+  padding-left: 2rem;
+  border-right: none;
+}
+.read-all-reviews {
+  margin-top: 4rem;
+  text-align: center;
+  color: #7ac15a;
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1430px) {
+  .ProfileInformation .top-area {
+    flex-direction: column;
+  }
+  .ProfileInformation .top-area .image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .ProfileInformation .profile-info-area {
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    padding-top: 0px;
+  }
+  .ProfileInformation .profile-info-area .top-area {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .ProfileInformation .profile-info-area .top-area > *:last-child {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .AboutUs > *:first-child p {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .ProfileInformation .bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ProfileInformation .bottom > *:first-child {
+    order: 1;
+  }
+  .ProfileInformation .bottom > *:nth-child(2) {
+    order: 3;
+    grid-column: span 2;
+  }
+  .ProfileInformation .bottom > *:last-child {
+    order: 2;
+  }
+  .AboutUs {
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .AboutUs > *:first-child {
+    grid-column: span 12 !important;
+  }
+  .ClientReviews .content .rating-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ClientReviews .content .rating-area > * + * {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .ProfileInformation .profile-info-area .bottom-area > *.out-trust-section {
+    overflow: hidden;
+  }
+  .ProfileInformation
+    .profile-info-area
+    .bottom-area
+    > *.out-trust-section
+    .images-wrapper {
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem 0rem;
+  }
+  .Home .BusinessExplore .business-solutions-column-area,
+  .reviews-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ClientReviews .content > h1,
+  .AboutUs > *:first-child h1 {
+    font-size: 40px;
+  }
+  .ProfileInformation .profile-info-area .bottom-area {
+    flex-direction: column;
+  }
+  .ProfileInformation .profile-info-area .bottom-area > *:first-child {
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+  .AboutUs > *:nth-child(5),
+  .AboutUs > *:nth-child(6) {
+    grid-column: span 4 !important;
+  }
+  .AboutUs > *:nth-child(7)::after {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ClientReviews .content > h1,
+  .AboutUs > *:first-child h1 {
+    font-size: 30px;
+  }
+  .Home .BusinessExplore .business-solutions-column-area > * h1,
+  .reviews-wrapper > * h1 {
+    font-size: 20px;
+  }
+  .Home .BusinessExplore .business-solutions-column-area > * h1 + p,
+  .reviews-wrapper > * h1 + p,
+  .Home .BusinessExplore .business-solutions-column-area > * h1 + p + p,
+  .ClientReviews .content .information-review-wrapper p,
+  .ClientReviews .content .rating-area > div > p:first-child,
+  .AboutUs > *:first-child p {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .ProfileInformation .bottom {
+    grid-template-columns: 1fr;
+  }
+  .ProfileInformation .bottom > * {
+    grid-column: span 1 !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Profilehero .glass-wrapper .presentation strong {
+    font-size: 40px;
+  }
+  .Profilehero .glass-wrapper .presentation h3 {
+    font-size: 20px;
+  }
+  .ClientReviews .content .rating-area > * {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ClientReviews .content .rating-area > div > * + * {
+    margin-left: 0px;
+  }
+}
